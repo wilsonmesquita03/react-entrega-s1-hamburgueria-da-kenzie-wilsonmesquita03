@@ -1,0 +1,23 @@
+main {
+    display: flex;
+    justify-content: space-between;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+@media (max-width: 1172px){
+    main {
+        flex-direction: column;
+    }
+}
+
+.message {
+    display: flex;
+    align-self: flex-start;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#message {
+    color: var(--grey-50);
+}
