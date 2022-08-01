@@ -29,7 +29,9 @@ function App() {
   
 
   function addToCart(product){
-    setCartList((oldList) => [product, ...oldList])
+    if(!cartList.includes(product)){
+      setCartList((oldList) => [product, ...oldList])
+    }
   }
 
   function removeFromCart(produto){
